@@ -4,7 +4,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://www.seleniumeasy.com/test/basic-first-form-demo.html')
 messageField = driver.find_element_by_xpath('//*[@id="user-message"]')
-messageField.send_keys('Doing your mom')
+messageField.send_keys('Nice message here')
 showMessageButton = driver.find_element_by_xpath('//*[@id="get-input"]/button')
 showMessageButton.click()
 
